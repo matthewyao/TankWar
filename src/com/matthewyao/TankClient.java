@@ -7,6 +7,8 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.util.List;
+import java.util.ArrayList;
 
 /**
  * Created by matthewyao on 2016/4/11.
@@ -18,7 +20,7 @@ public class TankClient extends Frame{
     public static final int GAME_REFRESH_TIME = 30;
 
     Tank myTank = new Tank(50,50,this);
-    Missile missile;
+    List<Missile> missiles = new ArrayList<Missile>();
 
     private Image offScreenImage = null;
 
@@ -47,7 +49,9 @@ public class TankClient extends Frame{
     @Override
     public void paint(Graphics g) {
         myTank.draw(g);
-        if (missile != null) missile.draw(g);
+        for(Missile missile : missiles){
+            missile.draw(g);
+        }
     }
 
     @Override

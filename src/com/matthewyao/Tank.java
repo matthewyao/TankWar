@@ -81,8 +81,7 @@ public class Tank {
         int key = e.getKeyCode();
         switch (key){
             case KeyEvent.VK_CONTROL:
-                tankClient.missile = fire();
-                break;
+                fire();break;
             case KeyEvent.VK_UP:bu = false;break;
             case KeyEvent.VK_RIGHT:br = false;break;
             case KeyEvent.VK_DOWN:bd = false;break;
@@ -92,7 +91,10 @@ public class Tank {
     }
 
     public Missile fire(){
+        int x = this.x + Tank.WIDTH/2 - Missile.WIDTH/2;
+        int y = this.y + Tank.HEIGHT/2 - Missile.HEIGHT/2;
         Missile missile = new Missile(x,y,ptDir);
+        tankClient.missiles.add(missile);
         return missile;
     }
 

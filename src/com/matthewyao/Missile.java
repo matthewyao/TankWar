@@ -7,7 +7,8 @@ import java.awt.*;
  */
 public class Missile {
     private int x,y;
-    private int X_SPEED = 10,Y_SPEED = 10,RADIO = 10;
+    public static final int WIDTH = 10,HEIGHT = 10;
+    private int X_SPEED = 10,Y_SPEED = 10;
     private Tank.Direction dir;
 
     public Missile(int x, int y, Tank.Direction dir) {
@@ -19,7 +20,7 @@ public class Missile {
     public void draw(Graphics g){
         Color c = g.getColor();
         g.setColor(Color.BLACK);
-        g.fillOval(x, y, RADIO, RADIO);
+        g.fillOval(x, y, WIDTH, HEIGHT);
         g.setColor(c);
         move();
     }
