@@ -28,12 +28,37 @@
       <file leaf-file-name="TankClient.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/matthewyao/TankClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.15007898">
-              <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.20873123">
+              <caret line="62" column="55" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#619#620#0" expanded="true" />
+                <element signature="class#768:918" expanded="false" />
+                <element signature="e#861#862#0" expanded="true" />
+                <element signature="e#907#908#0" expanded="true" />
+                <element signature="class#TankThread#0;class#TankClient#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KeyCode.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Java/jdk1.8.0_60/javafx-src.zip!/javafx/scene/input/KeyCode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-21.966667">
+              <caret line="624" column="4" selection-start-line="624" selection-start-column="4" selection-end-line="624" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KeyEvent.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Java/jdk1.8.0_60/src.zip!/java/awt/event/KeyEvent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1102" column="15" selection-start-line="1102" selection-start-column="15" selection-end-line="1102" selection-end-column="15" />
+              <folding>
+                <element signature="e#39153#39154#0" expanded="true" />
+                <element signature="e#39183#39184#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -430,12 +455,12 @@
       <created>1460382475211</created>
       <option name="number" value="Default" />
       <updated>1460382475211</updated>
-      <workItem from="1460382476493" duration="4632000" />
+      <workItem from="1460382476493" duration="6211000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4632000" />
+    <option name="totallyTimeSpent" value="6211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -443,13 +468,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2835498" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17532468" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17377399" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -481,14 +506,35 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://C:/Java/jdk1.8.0_60/javafx-src.zip!/javafx/scene/input/KeyCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.966667">
+          <caret line="624" column="4" selection-start-line="624" selection-start-column="4" selection-end-line="624" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_60/src.zip!/java/awt/event/KeyEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1102" column="15" selection-start-line="1102" selection-start-column="15" selection-end-line="1102" selection-end-column="15" />
+          <folding>
+            <element signature="e#39153#39154#0" expanded="true" />
+            <element signature="e#39183#39184#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/matthewyao/TankClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.15007898">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.20873123">
+          <caret line="62" column="55" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
+            <element signature="class#768:918" expanded="false" />
+            <element signature="e#861#862#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+            <element signature="class#TankThread#0;class#TankClient#0" expanded="false" />
           </folding>
         </state>
       </provider>
