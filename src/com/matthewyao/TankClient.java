@@ -17,7 +17,8 @@ public class TankClient extends Frame{
     public static final int GAME_HEIGHT = 600;
     public static final int GAME_REFRESH_TIME = 30;
 
-    Tank myTank = new Tank(50,50);
+    Tank myTank = new Tank(50,50,this);
+    Missile missile;
 
     private Image offScreenImage = null;
 
@@ -46,6 +47,7 @@ public class TankClient extends Frame{
     @Override
     public void paint(Graphics g) {
         myTank.draw(g);
+        if (missile != null) missile.draw(g);
     }
 
     @Override
@@ -80,6 +82,11 @@ public class TankClient extends Frame{
         @Override
         public void keyPressed(KeyEvent e) {
             myTank.keyPressed(e);
+        }
+
+        @Override
+        public void keyReleased(KeyEvent e) {
+            myTank.keyReleased(e);
         }
     }
 }

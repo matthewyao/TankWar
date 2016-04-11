@@ -10,14 +10,20 @@ public class Tank {
     private int x,y;
     private int X_SPEED = 5,Y_SPEED = 5;
     private Direction dir;
+    TankClient tankClient;
 
     private boolean bu = false, br = false, bd = false, bl = false;
     public enum Direction{U,RU,R,RD,D,LD,L,LU,STOP}
 
-    public Tank(int y, int x) {
-        this.y = y;
+    public Tank(int x, int y) {
         this.x = x;
+        this.y = y;
         dir = Direction.STOP;
+    }
+
+    public Tank(int x, int y, TankClient tankClient) {
+        this(x,y);
+        this.tankClient = tankClient;
     }
 
     public void draw(Graphics g){
@@ -53,6 +59,25 @@ public class Tank {
         calcDirection();
     }
 
+    public void keyReleased(KeyEvent e){
+        int key = e.getKeyCode();
+        switch (key){
+            case KeyEvent.VK_CONTROL:
+                tankClient.missile = fire();
+                break;
+            case KeyEvent.VK_UP:bu = false;break;
+            case KeyEvent.VK_RIGHT:br = false;break;
+            case KeyEvent.VK_DOWN:bd = false;break;
+            case KeyEvent.VK_LEFT:bl = false;break;
+        }
+        calcDirection();
+    }
+
+    public Missile fire(){
+        Missile missile = new Missile(x,y,dir);
+        return missile;
+    }
+
     public void calcDirection(){
         if (bu && !br && !bd && !bl) dir = Direction.U;
         else if (bu && br && !bd && !bl) dir = Direction.RU;
@@ -61,7 +86,7 @@ public class Tank {
         else if (!bu && !br && bd && !bl) dir = Direction.D;
         else if (!bu && !br && bd && bl) dir = Direction.LD;
         else if (!bu && !br && !bd && bl) dir = Direction.L;
-        else if (bu && !br && !bd && !bl) dir = Direction.LU;
+        else if (bu && !br && !bd && bl) dir = Direction.LU;
         else if (!bu && !br && !bd && !bl) dir = Direction.STOP;
     }
 }
