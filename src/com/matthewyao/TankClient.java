@@ -11,6 +11,8 @@ public class TankClient extends Frame{
 
     private int x = 50, y = 50;
 
+    private Image offScreenImage = null;
+
     public void lauchFrame(){
         this.setLocation(400, 300);
         this.setSize(800, 600);
@@ -42,13 +44,27 @@ public class TankClient extends Frame{
         y += 3;
     }
 
+    @Override
+    public void update(Graphics g) {
+        if (offScreenImage == null){
+            offScreenImage = this.createImage(800,600);
+        }
+        Graphics gImage = offScreenImage.getGraphics();
+        Color c = gImage.getColor();
+        gImage.setColor(Color.GREEN);
+        gImage.fillRect(0,0,800,600);
+        gImage.setColor(c);
+        paint(gImage);
+        g.drawImage(offScreenImage,0,0,null);
+    }
+
     private class TankThread implements Runnable{
         @Override
         public void run() {
             while (true){
                 repaint();
                 try {
-                    Thread.sleep(50);
+                    Thread.sleep(20);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
