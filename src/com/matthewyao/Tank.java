@@ -9,7 +9,8 @@ import java.awt.event.KeyEvent;
 public class Tank {
     private int x,y;
     private int X_SPEED = 5,Y_SPEED = 5;
-    private Direction dir;
+    public static final int WIDTH = 30,HEIGHT = 30;
+    private Direction dir,ptDir;
     TankClient tankClient;
 
     private boolean bu = false, br = false, bd = false, bl = false;
@@ -19,6 +20,7 @@ public class Tank {
         this.x = x;
         this.y = y;
         dir = Direction.STOP;
+        ptDir = Direction.U;
     }
 
     public Tank(int x, int y, TankClient tankClient) {
@@ -26,10 +28,25 @@ public class Tank {
         this.tankClient = tankClient;
     }
 
+    public void drawPt(Graphics g){
+        switch (ptDir){
+            case U:g.drawLine(x + WIDTH/2,y + HEIGHT/2,x + WIDTH/2,y);break;
+            case RU:g.drawLine(x + WIDTH/2,y + HEIGHT/2,x + WIDTH,y);break;
+            case R:g.drawLine(x + WIDTH/2,y + HEIGHT/2,x + WIDTH,y + HEIGHT/2);break;
+            case RD:g.drawLine(x + WIDTH/2,y + HEIGHT/2,x + WIDTH,y + HEIGHT);break;
+            case D:g.drawLine(x + WIDTH/2,y + HEIGHT/2,x + WIDTH/2,y + HEIGHT);break;
+            case LD:g.drawLine(x + WIDTH/2,y + HEIGHT/2,x ,y + HEIGHT);break;
+            case L:g.drawLine(x + WIDTH/2,y + HEIGHT/2,x,y + HEIGHT/2);break;
+            case LU:g.drawLine(x + WIDTH/2,y + HEIGHT/2,x,y);break;
+        }
+    }
+
     public void draw(Graphics g){
         Color c = g.getColor();
         g.setColor(Color.RED);
-        g.fillOval(x, y, 30, 30);
+        g.fillOval(x, y, WIDTH, HEIGHT);
+        g.setColor(Color.black);
+        drawPt(g);
         g.setColor(c);
         move();
     }
@@ -46,6 +63,7 @@ public class Tank {
             case LU:x -= X_SPEED;y -= Y_SPEED;break;
             case STOP:break;
         }
+        if (dir != Direction.STOP) ptDir = dir;
     }
     
     public void keyPressed(KeyEvent e){
@@ -74,7 +92,7 @@ public class Tank {
     }
 
     public Missile fire(){
-        Missile missile = new Missile(x,y,dir);
+        Missile missile = new Missile(x,y,ptDir);
         return missile;
     }
 
