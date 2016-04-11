@@ -17,8 +17,7 @@ public class TankClient extends Frame{
     public static final int GAME_HEIGHT = 600;
     public static final int GAME_REFRESH_TIME = 30;
 
-    private int x = 50, y = 50;
-    private int inc = 5;
+    Tank myTank = new Tank(50,50);
 
     private Image offScreenImage = null;
 
@@ -46,10 +45,7 @@ public class TankClient extends Frame{
 
     @Override
     public void paint(Graphics g) {
-        Color c = g.getColor();
-        g.setColor(Color.RED);
-        g.fillOval(x, y, 30, 30);
-        g.setColor(c);
+        myTank.draw(g);
     }
 
     @Override
@@ -83,13 +79,7 @@ public class TankClient extends Frame{
     private class KeyMonitor extends KeyAdapter{
         @Override
         public void keyPressed(KeyEvent e) {
-            int key = e.getKeyCode();
-            switch (key){
-                case KeyEvent.VK_UP:y -= inc;break;
-                case KeyEvent.VK_RIGHT:x += inc;break;
-                case KeyEvent.VK_DOWN:y += inc;break;
-                case KeyEvent.VK_LEFT:x -= inc;break;
-            }
+            myTank.keyPressed(e);
         }
     }
 }
