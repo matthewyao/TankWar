@@ -7,6 +7,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.util.Iterator;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -38,7 +39,10 @@ public class TankClient extends Frame{
         this.setBackground(Color.GREEN);
         this.addKeyListener(new KeyMonitor());
         this.setVisible(true);
-        new TankThread().run();
+        Thread t1 = new Thread(new TankThread());
+        Thread t2 = new Thread(new MissileCleanThread());
+        t1.start();
+        t2.start();
     }
 
     public static void main(String[] args) {
@@ -78,6 +82,21 @@ public class TankClient extends Frame{
                     Thread.sleep(GAME_REFRESH_TIME);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    private class MissileCleanThread implements Runnable{
+        @Override
+        public void run() {
+            while (true){
+                Iterator<Missile> iterator = missiles.iterator();
+                while (iterator.hasNext()){
+                    Missile missile = iterator.next();
+                    if ( ! missile.isLive()){
+                        iterator.remove();
+                    }
                 }
             }
         }

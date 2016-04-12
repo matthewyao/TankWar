@@ -10,12 +10,27 @@ public class Missile {
     public static final int WIDTH = 10,HEIGHT = 10;
     private int X_SPEED = 10,Y_SPEED = 10;
     private Tank.Direction dir;
+    private boolean live = true;
+//    private TankClient tankClient;
+
+    public boolean isLive() {
+        return live;
+    }
+
+    public void setLive(boolean live) {
+        this.live = live;
+    }
 
     public Missile(int x, int y, Tank.Direction dir) {
         this.x = x;
         this.y = y;
         this.dir = dir;
     }
+
+//    public Missile(int x, int y, Tank.Direction dir,TankClient tankClient) {
+//        this(x,y,dir);
+//        this.tankClient = tankClient;
+//    }
 
     public void draw(Graphics g){
         Color c = g.getColor();
@@ -35,6 +50,10 @@ public class Missile {
             case LD:x -= X_SPEED;y += Y_SPEED;break;
             case L:x -= X_SPEED;break;
             case LU:x -= X_SPEED;y -= Y_SPEED;break;
+        }
+        if (x < 0 || y < 0 || x > TankClient.GAME_WIDTH || y > TankClient.GAME_HEIGHT){
+            live = false;
+//            tankClient.missiles.remove(this);
         }
     }
 }
