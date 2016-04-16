@@ -8,6 +8,23 @@ import java.awt.event.KeyEvent;
  */
 public class Tank {
     private int x,y;
+
+    public int getX() {
+        return x;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
     private int X_SPEED = 5,Y_SPEED = 5;
     public static final int WIDTH = 30,HEIGHT = 30;
     private Direction dir,ptDir;
@@ -112,7 +129,7 @@ public class Tank {
     public Missile fire(){
         int x = this.x + Tank.WIDTH/2 - Missile.WIDTH/2;
         int y = this.y + Tank.HEIGHT/2 - Missile.HEIGHT/2;
-        Missile missile = new Missile(x,y,ptDir);
+        Missile missile = new Missile(x,y,ptDir,tankClient);
         tankClient.missiles.add(missile);
         return missile;
     }

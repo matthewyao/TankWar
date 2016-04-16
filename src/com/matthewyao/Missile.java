@@ -11,7 +11,7 @@ public class Missile {
     private int X_SPEED = 10,Y_SPEED = 10;
     private Tank.Direction dir;
     private boolean live = true;
-//    private TankClient tankClient;
+    private TankClient tankClient;
 
     public boolean isLive() {
         return live;
@@ -27,10 +27,10 @@ public class Missile {
         this.dir = dir;
     }
 
-//    public Missile(int x, int y, Tank.Direction dir,TankClient tankClient) {
-//        this(x,y,dir);
-//        this.tankClient = tankClient;
-//    }
+    public Missile(int x, int y, Tank.Direction dir,TankClient tankClient) {
+        this(x,y,dir);
+        this.tankClient = tankClient;
+    }
 
     public void draw(Graphics g){
         if (!live) return;
@@ -54,7 +54,7 @@ public class Missile {
         }
         if (x < 0 || y < 0 || x > TankClient.GAME_WIDTH || y > TankClient.GAME_HEIGHT){
             live = false;
-//            tankClient.missiles.remove(this);
+            tankClient.missiles.remove(this);
         }
     }
 
@@ -65,7 +65,8 @@ public class Missile {
     public void hitTank(Tank tank){
         if(this.getRect().intersects(tank.getRect()) && tank.isLive()){
             tank.setLive(false);//坦克消失
-            this.setLive(false);//子弹消失
+            setLive(false);//子弹消失
+            tankClient.explodes.add(new Explode(tank.getX(),tank.getY(),tankClient));
         }
     }
 }

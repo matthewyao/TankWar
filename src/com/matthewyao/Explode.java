@@ -8,7 +8,7 @@ import java.awt.*;
 public class Explode {
     private int x,y;
     private boolean live = true;
-    private int[] diarameters = {2,5,10,17,29,45,66,40,13,3};
+    private int[] diarameters = {8,17,29,45,23,3};
     int step = 0;
 
     TankClient tankClient;
@@ -20,8 +20,10 @@ public class Explode {
     }
 
     public void draw(Graphics g){
+        if (!live) return;
         if (step == diarameters.length) {
             step = 0;
+            live = false;
         }
         Color c = g.getColor();
         g.setColor(Color.ORANGE);
