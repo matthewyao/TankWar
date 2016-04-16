@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ede89c31-a2eb-4fb7-8bb6-c13a852fbf32" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TankWar/com/matthewyao/Missile$1.class" afterPath="$PROJECT_DIR$/out/production/TankWar/com/matthewyao/Missile$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TankWar/com/matthewyao/Missile.class" afterPath="$PROJECT_DIR$/out/production/TankWar/com/matthewyao/Missile.class" />
-      <change type="MODIFICATION" beforePath="D:\Java Workspace\TankWar\out\production\TankWar\com\matthewyao\TankClient$1.class" afterPath="D:\Java Workspace\TankWar\out\production\TankWar\com\matthewyao\TankClient$1.class" />
-      <change type="MODIFICATION" beforePath="D:\Java Workspace\TankWar\out\production\TankWar\com\matthewyao\TankClient$KeyMonitor.class" afterPath="D:\Java Workspace\TankWar\out\production\TankWar\com\matthewyao\TankClient$KeyMonitor.class" />
-      <change type="MODIFICATION" beforePath="D:\Java Workspace\TankWar\out\production\TankWar\com\matthewyao\TankClient$TankThread.class" afterPath="D:\Java Workspace\TankWar\out\production\TankWar\com\matthewyao\TankClient$TankThread.class" />
-      <change type="MODIFICATION" beforePath="D:\Java Workspace\TankWar\out\production\TankWar\com\matthewyao\TankClient.class" afterPath="D:\Java Workspace\TankWar\out\production\TankWar\com\matthewyao\TankClient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/matthewyao/Missile.java" afterPath="$PROJECT_DIR$/src/com/matthewyao/Missile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/matthewyao/Tank.java" afterPath="$PROJECT_DIR$/src/com/matthewyao/Tank.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/matthewyao/TankClient.java" afterPath="$PROJECT_DIR$/src/com/matthewyao/TankClient.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -33,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TankClient.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TankClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/matthewyao/TankClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40487805">
-              <caret line="95" column="54" selection-start-line="95" selection-start-column="54" selection-end-line="95" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="56" column="40" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="class#884:1034" expanded="false" />
@@ -50,17 +44,17 @@
         <entry file="jar://C:/Java/jdk1.8.0_60/src.zip!/java/util/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="850" column="0" selection-start-line="850" selection-start-column="0" selection-end-line="850" selection-end-column="0" />
+              <caret line="900" column="0" selection-start-line="900" selection-start-column="0" selection-end-line="900" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tank.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Tank.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/matthewyao/Tank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="95" column="47" selection-start-line="95" selection-start-column="47" selection-end-line="95" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.68471336">
+              <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,12 +67,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
-              <folding>
-                <element signature="e#362#363#0" expanded="true" />
-                <element signature="e#389#390#0" expanded="true" />
-                <element signature="e#430#431#0" expanded="true" />
-                <element signature="e#462#463#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -136,6 +125,8 @@
                 <element signature="e#31258#31259#0" expanded="false" />
                 <element signature="e#31763#31764#0" expanded="false" />
                 <element signature="e#31827#31828#0" expanded="false" />
+                <element signature="e#39153#39154#0" expanded="false" />
+                <element signature="e#39183#39184#0" expanded="false" />
                 <element signature="e#39387#39388#0" expanded="false" />
                 <element signature="e#39425#39426#0" expanded="false" />
                 <element signature="e#40115#40116#0" expanded="false" />
@@ -171,9 +162,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/matthewyao/Tank.java" />
         <option value="$PROJECT_DIR$/src/com/matthewyao/Missile.java" />
         <option value="$PROJECT_DIR$/src/com/matthewyao/TankClient.java" />
+        <option value="$PROJECT_DIR$/src/com/matthewyao/Tank.java" />
       </list>
     </option>
   </component>
@@ -213,8 +204,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -253,6 +242,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -263,6 +254,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager" selected="Application.TankClient">
     <configuration default="false" name="TankClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -544,6 +536,9 @@
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ede89c31-a2eb-4fb7-8bb6-c13a852fbf32" name="Default" comment="" />
@@ -551,12 +546,13 @@
       <option name="number" value="Default" />
       <updated>1460382475211</updated>
       <workItem from="1460382476493" duration="12163000" />
-      <workItem from="1460467332074" duration="2859000" />
+      <workItem from="1460467332074" duration="2861000" />
+      <workItem from="1460789025082" duration="2104000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15022000" />
+    <option name="totallyTimeSpent" value="17128000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="1056" extended-state="1" />
@@ -570,7 +566,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28896105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28896105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1736111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -579,7 +575,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27056277" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27056277" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -588,19 +584,19 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/matthewyao/TankClient.java</url>
-          <line>97</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
@@ -610,6 +606,109 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/matthewyao/TankClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#884:1034" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_60/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="850" column="0" selection-start-line="850" selection-start-column="0" selection-end-line="850" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/matthewyao/Tank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="95" column="47" selection-start-line="95" selection-start-column="47" selection-end-line="95" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/matthewyao/Missile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_60/javafx-src.zip!/javafx/scene/input/KeyCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="624" column="4" selection-start-line="624" selection-start-column="4" selection-end-line="624" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#29205#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#25560#25561#0" expanded="false" />
+            <element signature="e#25595#25596#0" expanded="false" />
+            <element signature="e#25790#25791#0" expanded="false" />
+            <element signature="e#25848#25849#0" expanded="false" />
+            <element signature="e#26107#26108#0" expanded="false" />
+            <element signature="e#26167#26168#0" expanded="false" />
+            <element signature="e#26378#26379#0" expanded="false" />
+            <element signature="e#26433#26434#0" expanded="false" />
+            <element signature="e#26626#26627#0" expanded="false" />
+            <element signature="e#26684#26685#0" expanded="false" />
+            <element signature="e#26861#26862#0" expanded="false" />
+            <element signature="e#26917#26918#0" expanded="false" />
+            <element signature="e#27115#27116#0" expanded="false" />
+            <element signature="e#27170#27171#0" expanded="false" />
+            <element signature="e#27348#27349#0" expanded="false" />
+            <element signature="e#27404#27405#0" expanded="false" />
+            <element signature="e#27588#27589#0" expanded="false" />
+            <element signature="e#27648#27649#0" expanded="false" />
+            <element signature="e#27863#27864#0" expanded="false" />
+            <element signature="e#27918#27919#0" expanded="false" />
+            <element signature="e#28043#28044#0" expanded="false" />
+            <element signature="e#28070#28071#0" expanded="false" />
+            <element signature="e#28295#28296#0" expanded="false" />
+            <element signature="e#28320#28321#0" expanded="false" />
+            <element signature="e#28602#28603#0" expanded="false" />
+            <element signature="e#28629#28630#0" expanded="false" />
+            <element signature="e#29160#29161#0" expanded="false" />
+            <element signature="e#29200#29201#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_60/src.zip!/java/awt/event/KeyEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1102" column="15" selection-start-line="1102" selection-start-column="15" selection-end-line="1102" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#65199#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#31198#31199#0" expanded="false" />
+            <element signature="e#31258#31259#0" expanded="false" />
+            <element signature="e#31763#31764#0" expanded="false" />
+            <element signature="e#31827#31828#0" expanded="false" />
+            <element signature="e#39153#39154#0" expanded="false" />
+            <element signature="e#39183#39184#0" expanded="false" />
+            <element signature="e#39387#39388#0" expanded="false" />
+            <element signature="e#39425#39426#0" expanded="false" />
+            <element signature="e#40115#40116#0" expanded="false" />
+            <element signature="e#40145#40146#0" expanded="false" />
+            <element signature="e#40400#40401#0" expanded="false" />
+            <element signature="e#40438#40439#0" expanded="false" />
+            <element signature="e#41838#41839#0" expanded="false" />
+            <element signature="e#41872#41873#0" expanded="false" />
+            <element signature="e#62673#62674#0" expanded="false" />
+            <element signature="e#62716#62717#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/matthewyao/TankClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -635,12 +734,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding>
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -694,6 +788,8 @@
             <element signature="e#31258#31259#0" expanded="false" />
             <element signature="e#31763#31764#0" expanded="false" />
             <element signature="e#31827#31828#0" expanded="false" />
+            <element signature="e#39153#39154#0" expanded="false" />
+            <element signature="e#39183#39184#0" expanded="false" />
             <element signature="e#39387#39388#0" expanded="false" />
             <element signature="e#39425#39426#0" expanded="false" />
             <element signature="e#40115#40116#0" expanded="false" />
@@ -719,6 +815,8 @@
             <element signature="e#31258#31259#0" expanded="false" />
             <element signature="e#31763#31764#0" expanded="false" />
             <element signature="e#31827#31828#0" expanded="false" />
+            <element signature="e#39153#39154#0" expanded="false" />
+            <element signature="e#39183#39184#0" expanded="false" />
             <element signature="e#39387#39388#0" expanded="false" />
             <element signature="e#39425#39426#0" expanded="false" />
             <element signature="e#40115#40116#0" expanded="false" />
@@ -768,29 +866,6 @@
             <element signature="e#28629#28630#0" expanded="false" />
             <element signature="e#29160#29161#0" expanded="false" />
             <element signature="e#29200#29201#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/matthewyao/Missile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
-          <folding>
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/matthewyao/Tank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="47" selection-start-line="95" selection-start-column="47" selection-end-line="95" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -798,18 +873,36 @@
     <entry file="jar://C:/Java/jdk1.8.0_60/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="850" column="0" selection-start-line="850" selection-start-column="0" selection-end-line="850" selection-end-column="0" />
+          <caret line="900" column="0" selection-start-line="900" selection-start-column="0" selection-end-line="900" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/matthewyao/Missile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/matthewyao/TankClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40487805">
-          <caret line="95" column="54" selection-start-line="95" selection-start-column="54" selection-end-line="95" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="40" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#884:1034" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/matthewyao/Tank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68471336">
+          <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

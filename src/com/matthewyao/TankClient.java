@@ -40,9 +40,9 @@ public class TankClient extends Frame{
         this.addKeyListener(new KeyMonitor());
         this.setVisible(true);
         Thread t1 = new Thread(new TankThread());
-        Thread t2 = new Thread(new MissileCleanThread());
+//        Thread t2 = new Thread(new MissileCleanThread());
         t1.start();
-        t2.start();
+//        t2.start();
     }
 
     public static void main(String[] args) {
@@ -55,7 +55,8 @@ public class TankClient extends Frame{
         g.drawString("missiles count:"+missiles.size(),10,50);
         myTank.draw(g);
         for(Missile missile : missiles){
-            missile.draw(g);
+            if(! missile.isLive()) missiles.remove(missile);
+            else missile.draw(g);
         }
     }
 
@@ -87,20 +88,20 @@ public class TankClient extends Frame{
         }
     }
 
-    private class MissileCleanThread implements Runnable{
-        @Override
-        public void run() {
-            while (true){
-                Iterator<Missile> iterator = missiles.iterator();
-                while (iterator.hasNext()){
-                    Missile missile = iterator.next();
-                    if ( ! missile.isLive()){
-                        iterator.remove();
-                    }
-                }
-            }
-        }
-    }
+//    private class MissileCleanThread implements Runnable{
+//        @Override
+//        public void run() {
+//            while (true){
+//                Iterator<Missile> iterator = missiles.iterator();
+//                while (iterator.hasNext()){
+//                    Missile missile = iterator.next();
+//                    if ( ! missile.isLive()){
+//                        iterator.remove();
+//                    }
+//                }
+//            }
+//        }
+//    }
 
     private class KeyMonitor extends KeyAdapter{
         @Override

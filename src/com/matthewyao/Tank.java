@@ -8,7 +8,7 @@ import java.awt.event.KeyEvent;
  */
 public class Tank {
     private int x,y;
-    private int X_SPEED = 5,Y_SPEED = 5;
+    private int X_SPEED = 15,Y_SPEED = 15;
     public static final int WIDTH = 30,HEIGHT = 30;
     private Direction dir,ptDir;
     TankClient tankClient;
@@ -64,6 +64,12 @@ public class Tank {
             case STOP:break;
         }
         if (dir != Direction.STOP) ptDir = dir;
+        //·ÀÖ¹Ì¹¿Ë³ö½ç
+        if (x < 4) x = 4;
+        if (y < 27) y = 27;
+        if (x > TankClient.GAME_WIDTH - Tank.WIDTH - 5) x = TankClient.GAME_WIDTH - Tank.WIDTH - 5;
+        if (y > TankClient.GAME_HEIGHT - Tank.HEIGHT - 5) y = TankClient.GAME_HEIGHT - Tank.HEIGHT - 5;
+
     }
     
     public void keyPressed(KeyEvent e){
