@@ -20,7 +20,10 @@ public class Explode {
     }
 
     public void draw(Graphics g){
-        if (!live) return;
+        if (!live) {
+            tankClient.explodes.remove(this);
+            return;
+        }
         if (step == diarameters.length) {
             step = 0;
             live = false;

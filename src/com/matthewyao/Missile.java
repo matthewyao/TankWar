@@ -34,7 +34,10 @@ public class Missile {
     }
 
     public void draw(Graphics g){
-        if (!live) return;
+        if (!live) {
+            tankClient.missiles.remove(this);
+            return;
+        }
         Color c = g.getColor();
         g.setColor(Color.BLACK);
         g.fillOval(x, y, WIDTH, HEIGHT);
