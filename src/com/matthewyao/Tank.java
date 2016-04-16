@@ -8,23 +8,25 @@ import java.awt.event.KeyEvent;
  */
 public class Tank {
     private int x,y;
-    private int X_SPEED = 15,Y_SPEED = 15;
+    private int X_SPEED = 5,Y_SPEED = 5;
     public static final int WIDTH = 30,HEIGHT = 30;
     private Direction dir,ptDir;
+    private boolean good;
     TankClient tankClient;
 
     private boolean bu = false, br = false, bd = false, bl = false;
     public enum Direction{U,RU,R,RD,D,LD,L,LU,STOP}
 
-    public Tank(int x, int y) {
+    public Tank(int x, int y,boolean good) {
         this.x = x;
         this.y = y;
+        this.good = good;
         dir = Direction.STOP;
         ptDir = Direction.U;
     }
 
-    public Tank(int x, int y, TankClient tankClient) {
-        this(x,y);
+    public Tank(int x, int y,boolean good, TankClient tankClient) {
+        this(x,y,good);
         this.tankClient = tankClient;
     }
 
@@ -43,7 +45,8 @@ public class Tank {
 
     public void draw(Graphics g){
         Color c = g.getColor();
-        g.setColor(Color.RED);
+        if (good) g.setColor(Color.RED);
+        else g.setColor(Color.BLUE);
         g.fillOval(x, y, WIDTH, HEIGHT);
         g.setColor(Color.black);
         drawPt(g);
