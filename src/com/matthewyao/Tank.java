@@ -12,7 +12,16 @@ public class Tank {
     public static final int WIDTH = 30,HEIGHT = 30;
     private Direction dir,ptDir;
     private boolean good;
+    private boolean live = true;
     TankClient tankClient;
+
+    public boolean isLive() {
+        return live;
+    }
+
+    public void setLive(boolean live) {
+        this.live = live;
+    }
 
     private boolean bu = false, br = false, bd = false, bl = false;
     public enum Direction{U,RU,R,RD,D,LD,L,LU,STOP}
@@ -44,6 +53,7 @@ public class Tank {
     }
 
     public void draw(Graphics g){
+        if (!live) return;
         Color c = g.getColor();
         if (good) g.setColor(Color.RED);
         else g.setColor(Color.BLUE);
@@ -117,5 +127,9 @@ public class Tank {
         else if (!bu && !br && !bd && bl) dir = Direction.L;
         else if (bu && !br && !bd && bl) dir = Direction.LU;
         else if (!bu && !br && !bd && !bl) dir = Direction.STOP;
+    }
+
+    public Rectangle getRect(){
+        return new Rectangle(x,y,WIDTH,HEIGHT);
     }
 }

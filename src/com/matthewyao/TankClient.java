@@ -57,6 +57,7 @@ public class TankClient extends Frame{
         myTank.draw(g);
         enemyTank.draw(g);
         for(Missile missile : missiles){
+            missile.hitTank(enemyTank);
             if(! missile.isLive()) missiles.remove(missile);
             else missile.draw(g);
         }

@@ -33,6 +33,7 @@ public class Missile {
 //    }
 
     public void draw(Graphics g){
+        if (!live) return;
         Color c = g.getColor();
         g.setColor(Color.BLACK);
         g.fillOval(x, y, WIDTH, HEIGHT);
@@ -54,6 +55,17 @@ public class Missile {
         if (x < 0 || y < 0 || x > TankClient.GAME_WIDTH || y > TankClient.GAME_HEIGHT){
             live = false;
 //            tankClient.missiles.remove(this);
+        }
+    }
+
+    private Rectangle getRect(){
+        return new Rectangle(x,y,WIDTH,HEIGHT);
+    }
+
+    public void hitTank(Tank tank){
+        if(this.getRect().intersects(tank.getRect()) && tank.isLive()){
+            tank.setLive(false);//坦克消失
+            this.setLive(false);//子弹消失
         }
     }
 }
