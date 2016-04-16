@@ -1,6 +1,7 @@
 package com.matthewyao;
 
 import java.awt.*;
+import java.util.List;
 
 /**
  * Created by matthewyao on 2016/4/12.
@@ -67,6 +68,12 @@ public class Missile {
             tank.setLive(false);//坦克消失
             setLive(false);//子弹消失
             tankClient.explodes.add(new Explode(tank.getX(),tank.getY(),tankClient));
+        }
+    }
+
+    public void hitTanks(List<Tank> tanks){
+        for (Tank tank : tanks){
+            hitTank(tank);
         }
     }
 }

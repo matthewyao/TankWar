@@ -21,13 +21,16 @@ public class TankClient extends Frame{
     public static final int GAME_REFRESH_TIME = 30;
 
     Tank myTank = new Tank(50,50,true,this);
-    Tank enemyTank = new Tank(100,100,false,this);
+    List<Tank> tanks = new ArrayList<Tank>();
     List<Explode> explodes = new ArrayList<Explode>();
     List<Missile> missiles = new ArrayList<Missile>();
 
     private Image offScreenImage = null;
 
     public void lauchFrame(){
+        for (int i = 0;i < 10;i++){
+            tanks.add(new Tank(50 * (i+2),50,false,this));
+        }
         this.setLocation(400, 300);
         this.setSize(GAME_WIDTH, GAME_HEIGHT);
         this.setTitle("TankWar");
@@ -56,13 +59,15 @@ public class TankClient extends Frame{
     public void paint(Graphics g) {
         g.drawString("missiles count:" + missiles.size(), 10, 50);
         myTank.draw(g);
-        enemyTank.draw(g);
         for (Explode explode : explodes){
             explode.draw(g);
         }
         for(Missile missile : missiles){
-            missile.hitTank(enemyTank);
+            missile.hitTanks(tanks);
             missile.draw(g);
+        }
+        for (Tank tank : tanks){
+            tank.draw(g);
         }
     }
 
