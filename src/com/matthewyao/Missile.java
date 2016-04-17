@@ -13,6 +13,15 @@ public class Missile {
     private Tank.Direction dir;
     private boolean live = true;
     private TankClient tankClient;
+    private boolean good;
+
+    public boolean isGood() {
+        return good;
+    }
+
+    public void setGood(boolean good) {
+        this.good = good;
+    }
 
     public boolean isLive() {
         return live;
@@ -22,14 +31,15 @@ public class Missile {
         this.live = live;
     }
 
-    public Missile(int x, int y, Tank.Direction dir) {
+    public Missile(int x, int y,boolean good, Tank.Direction dir) {
         this.x = x;
         this.y = y;
+        this.good = good;
         this.dir = dir;
     }
 
-    public Missile(int x, int y, Tank.Direction dir,TankClient tankClient) {
-        this(x,y,dir);
+    public Missile(int x, int y,boolean good, Tank.Direction dir,TankClient tankClient) {
+        this(x,y,good,dir);
         this.tankClient = tankClient;
     }
 
@@ -67,7 +77,7 @@ public class Missile {
     }
 
     public void hitTank(Tank tank){
-        if(this.getRect().intersects(tank.getRect()) && tank.isLive()){
+        if(live && this.getRect().intersects(tank.getRect()) && tank.isLive() && this.good != tank.isGood()){
             tank.setLive(false);//坦克消失
             setLive(false);//子弹消失
             tankClient.explodes.add(new Explode(tank.getX(),tank.getY(),tankClient));

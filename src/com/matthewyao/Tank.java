@@ -30,6 +30,11 @@ public class Tank {
     public static final int WIDTH = 30,HEIGHT = 30;
     private Direction dir,ptDir;
     private boolean good;
+
+    public boolean isGood() {
+        return good;
+    }
+
     private boolean live = true;
     TankClient tankClient;
     private static Random random = new Random();
@@ -113,6 +118,7 @@ public class Tank {
                 dir = dirs[rn];
             }
             step--;
+            if (random.nextInt(50) > 48) fire();
         }
     }
     
@@ -141,9 +147,10 @@ public class Tank {
     }
 
     public Missile fire(){
+        if (!live) return null;
         int x = this.x + Tank.WIDTH/2 - Missile.WIDTH/2;
         int y = this.y + Tank.HEIGHT/2 - Missile.HEIGHT/2;
-        Missile missile = new Missile(x,y,ptDir,tankClient);
+        Missile missile = new Missile(x,y,good,ptDir,tankClient);
         tankClient.missiles.add(missile);
         return missile;
     }

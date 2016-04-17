@@ -18,7 +18,7 @@ public class TankClient extends Frame{
 
     public static final int GAME_WIDTH = 800;
     public static final int GAME_HEIGHT = 600;
-    public static final int GAME_REFRESH_TIME = 30;
+    public static final int GAME_REFRESH_TIME = 50;
 
     Tank myTank = new Tank(50,50,true, Tank.Direction.STOP,this);
     List<Tank> tanks = new ArrayList<Tank>();
@@ -66,6 +66,7 @@ public class TankClient extends Frame{
         }
         for (Missile missile : missiles){
             missile.hitTanks(tanks);
+            missile.hitTank(myTank);
             missile.draw(g);
         }
         for (Tank tank : tanks){
