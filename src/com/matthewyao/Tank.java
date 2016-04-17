@@ -33,6 +33,7 @@ public class Tank {
     private boolean live = true;
     TankClient tankClient;
     private static Random random = new Random();
+    int step = random.nextInt(10) + 5;
 
     public boolean isLive() {
         return live;
@@ -106,8 +107,12 @@ public class Tank {
         if (y > TankClient.GAME_HEIGHT - Tank.HEIGHT - 5) y = TankClient.GAME_HEIGHT - Tank.HEIGHT - 5;
         if (!good){
             Direction[] dirs = Direction.values();
-            int rn = random.nextInt(dirs.length);
-            dir = dirs[rn];
+            if (step == 0){
+                step = random.nextInt(10) + 5;
+                int rn = random.nextInt(dirs.length);
+                dir = dirs[rn];
+            }
+            step--;
         }
     }
     
