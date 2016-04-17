@@ -20,7 +20,7 @@ public class TankClient extends Frame{
     public static final int GAME_HEIGHT = 600;
     public static final int GAME_REFRESH_TIME = 30;
 
-    Tank myTank = new Tank(50,50,true,this);
+    Tank myTank = new Tank(50,50,true, Tank.Direction.STOP,this);
     List<Tank> tanks = new ArrayList<Tank>();
     List<Explode> explodes = new ArrayList<Explode>();
     List<Missile> missiles = new ArrayList<Missile>();
@@ -29,7 +29,7 @@ public class TankClient extends Frame{
 
     public void lauchFrame(){
         for (int i = 0;i < 10;i++){
-            tanks.add(new Tank(50 * (i+2),50,false,this));
+            tanks.add(new Tank(50 * (i+2),50,false, Tank.Direction.D,this));
         }
         this.setLocation(400, 300);
         this.setSize(GAME_WIDTH, GAME_HEIGHT);

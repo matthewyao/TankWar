@@ -2,6 +2,7 @@ package com.matthewyao;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.util.Random;
 
 /**
  * Created by matthewyao on 2016/4/11.
@@ -31,6 +32,7 @@ public class Tank {
     private boolean good;
     private boolean live = true;
     TankClient tankClient;
+    private static Random random = new Random();
 
     public boolean isLive() {
         return live;
@@ -43,16 +45,16 @@ public class Tank {
     private boolean bu = false, br = false, bd = false, bl = false;
     public enum Direction{U,RU,R,RD,D,LD,L,LU,STOP}
 
-    public Tank(int x, int y,boolean good) {
+    public Tank(int x, int y,Direction dir,boolean good) {
         this.x = x;
         this.y = y;
         this.good = good;
-        dir = Direction.STOP;
+        this.dir = dir;
         ptDir = Direction.U;
     }
 
-    public Tank(int x, int y,boolean good, TankClient tankClient) {
-        this(x,y,good);
+    public Tank(int x, int y,boolean good,Direction dir, TankClient tankClient) {
+        this(x,y,dir,good);
         this.tankClient = tankClient;
     }
 
@@ -102,7 +104,11 @@ public class Tank {
         if (y < 27) y = 27;
         if (x > TankClient.GAME_WIDTH - Tank.WIDTH - 5) x = TankClient.GAME_WIDTH - Tank.WIDTH - 5;
         if (y > TankClient.GAME_HEIGHT - Tank.HEIGHT - 5) y = TankClient.GAME_HEIGHT - Tank.HEIGHT - 5;
-
+        if (!good){
+            Direction[] dirs = Direction.values();
+            int rn = random.nextInt(dirs.length);
+            dir = dirs[rn];
+        }
     }
     
     public void keyPressed(KeyEvent e){
