@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ede89c31-a2eb-4fb7-8bb6-c13a852fbf32" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TankWar/com/matthewyao/Tank.class" afterPath="$PROJECT_DIR$/out/production/TankWar/com/matthewyao/Tank.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/matthewyao/Missile.java" afterPath="$PROJECT_DIR$/src/com/matthewyao/Missile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/matthewyao/Tank.java" afterPath="$PROJECT_DIR$/src/com/matthewyao/Tank.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/matthewyao/TankClient.java" afterPath="$PROJECT_DIR$/src/com/matthewyao/TankClient.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TankWar.iws" />
@@ -60,8 +57,8 @@
       <file leaf-file-name="Missile.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/matthewyao/Missile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3386076">
-              <caret line="79" column="18" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.443038">
+              <caret line="82" column="89" selection-start-line="82" selection-start-column="89" selection-end-line="82" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#409#410#0" expanded="true" />
@@ -567,12 +564,12 @@
       <workItem from="1460382476493" duration="12163000" />
       <workItem from="1460467332074" duration="2861000" />
       <workItem from="1460789025082" duration="7041000" />
-      <workItem from="1460898957521" duration="2532000" />
+      <workItem from="1460898957521" duration="3109000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24597000" />
+    <option name="totallyTimeSpent" value="25174000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
@@ -1060,8 +1057,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/matthewyao/Missile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3386076">
-          <caret line="79" column="18" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.443038">
+          <caret line="82" column="89" selection-start-line="82" selection-start-column="89" selection-end-line="82" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#409#410#0" expanded="true" />

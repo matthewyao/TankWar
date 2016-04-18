@@ -80,7 +80,7 @@ public class Missile {
         if(live && this.getRect().intersects(tank.getRect()) && tank.isLive() && this.good != tank.isGood()){
             tank.setLive(false);//坦克消失
             setLive(false);//子弹消失
-            tankClient.explodes.add(new Explode(tank.getX(),tank.getY(),tankClient));
+            tankClient.explodes.add(new Explode(tank.getX(),tank.getY(),tankClient));//爆炸
         }
     }
 
