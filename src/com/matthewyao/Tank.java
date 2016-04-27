@@ -150,6 +150,7 @@ public class Tank {
             case KeyEvent.VK_RIGHT:br = false;break;
             case KeyEvent.VK_DOWN:bd = false;break;
             case KeyEvent.VK_LEFT:bl = false;break;
+            case KeyEvent.VK_A:superFire();break;
         }
         calcDirection();
     }
@@ -159,6 +160,15 @@ public class Tank {
         int x = this.x + Tank.WIDTH/2 - Missile.WIDTH/2;
         int y = this.y + Tank.HEIGHT/2 - Missile.HEIGHT/2;
         Missile missile = new Missile(x,y,good,ptDir,tankClient);
+        tankClient.missiles.add(missile);
+        return missile;
+    }
+
+    public Missile fire(Direction dir){
+        if (!live) return null;
+        int x = this.x + Tank.WIDTH/2 - Missile.WIDTH/2;
+        int y = this.y + Tank.HEIGHT/2 - Missile.HEIGHT/2;
+        Missile missile = new Missile(x,y,good,dir,tankClient);
         tankClient.missiles.add(missile);
         return missile;
     }
@@ -198,6 +208,13 @@ public class Tank {
                     tank.stay();
                 }
             }
+        }
+    }
+
+    public void superFire(){
+        Direction[] dirs = Direction.values();
+        for (Direction dir : dirs) {
+            fire(dir);
         }
     }
 }
