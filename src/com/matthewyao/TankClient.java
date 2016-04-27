@@ -21,8 +21,8 @@ public class TankClient extends Frame{
     public static final int GAME_REFRESH_TIME = 50;
 
     Tank myTank = new Tank(50,50,true, Tank.Direction.STOP,this);
-    Wall w1 = new Wall(100,200,20,200,this);
-    Wall w2 = new Wall(200,100,250,20,this);
+    Wall w1 = new Wall(150,200,20,300,this);
+    Wall w2 = new Wall(300,100,350,20,this);
     List<Tank> tanks = new ArrayList<Tank>();
     List<Explode> explodes = new ArrayList<Explode>();
     List<Missile> missiles = new ArrayList<Missile>();
@@ -69,6 +69,8 @@ public class TankClient extends Frame{
         for (Missile missile : missiles){
             missile.hitTanks(tanks);
             missile.hitTank(myTank);
+            missile.hitWall(w1);
+            missile.hitWall(w2);
             missile.draw(g);
         }
         for (Tank tank : tanks){

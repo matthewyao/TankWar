@@ -84,6 +84,12 @@ public class Missile {
         }
     }
 
+    public void hitWall(Wall w){
+        if (this.live && this.getRect().intersects(w.getRect())){
+            this.live = false;
+        }
+    }
+
     public void hitTanks(List<Tank> tanks){
         for (Tank tank : tanks){
             hitTank(tank);
