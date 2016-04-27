@@ -10,6 +10,8 @@ import java.util.Random;
 public class Tank {
     private int x,y;
 
+    private int oldX,oldY;
+
     public int getX() {
         return x;
     }
@@ -54,6 +56,8 @@ public class Tank {
     public Tank(int x, int y,Direction dir,boolean good) {
         this.x = x;
         this.y = y;
+        this.oldX = x;
+        this.oldY = y;
         this.good = good;
         this.dir = dir;
         ptDir = Direction.U;
@@ -93,6 +97,10 @@ public class Tank {
     }
 
     public void move(){
+
+        oldX = x;
+        oldY = y;
+
         switch (dir){
             case U:y -= Y_SPEED;break;
             case RU:x += X_SPEED;y -= Y_SPEED;break;
@@ -169,5 +177,16 @@ public class Tank {
 
     public Rectangle getRect(){
         return new Rectangle(x,y,WIDTH,HEIGHT);
+    }
+
+    private void stay(){
+        this.x = oldX;
+        this.y = oldY;
+    }
+
+    public void collidesWithWall(Wall w){
+        if (this.live && this.getRect().intersects(w.getRect())){
+            this.stay();
+        }
     }
 }
