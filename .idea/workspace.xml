@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ede89c31-a2eb-4fb7-8bb6-c13a852fbf32" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/matthewyao/Missile.java" afterPath="$PROJECT_DIR$/src/com/matthewyao/Missile.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/matthewyao/Tank.java" afterPath="$PROJECT_DIR$/src/com/matthewyao/Tank.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/matthewyao/TankClient.java" afterPath="$PROJECT_DIR$/src/com/matthewyao/TankClient.java" />
     </list>
     <ignored path="TankWar.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tank.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Tank.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/matthewyao/Tank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.54818326">
+              <caret line="223" column="28" selection-start-line="223" selection-start-column="28" selection-end-line="223" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#273#274#0" expanded="true" />
@@ -60,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Missile.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Missile.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/matthewyao/Missile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4028436">
-              <caret line="80" column="29" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#540#541#0" expanded="true" />
@@ -195,9 +193,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/matthewyao/Explode.java" />
         <option value="$PROJECT_DIR$/src/com/matthewyao/Wall.java" />
-        <option value="$PROJECT_DIR$/src/com/matthewyao/Tank.java" />
         <option value="$PROJECT_DIR$/src/com/matthewyao/TankClient.java" />
         <option value="$PROJECT_DIR$/src/com/matthewyao/Missile.java" />
+        <option value="$PROJECT_DIR$/src/com/matthewyao/Tank.java" />
       </list>
     </option>
   </component>
@@ -589,12 +587,12 @@
       <workItem from="1460467332074" duration="2861000" />
       <workItem from="1460789025082" duration="7041000" />
       <workItem from="1460898957521" duration="3145000" />
-      <workItem from="1461764276291" duration="3095000" />
+      <workItem from="1461764276291" duration="3366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28305000" />
+    <option name="totallyTimeSpent" value="28576000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
@@ -1222,26 +1220,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/matthewyao/Tank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#5883#5884#0" expanded="true" />
-            <element signature="e#5937#5938#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/matthewyao/Missile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4028436">
-          <caret line="80" column="29" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#540#541#0" expanded="true" />
@@ -1250,6 +1232,22 @@
             <element signature="e#640#641#0" expanded="true" />
             <element signature="e#1886#1887#0" expanded="true" />
             <element signature="e#1940#1941#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/matthewyao/Tank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54818326">
+          <caret line="223" column="28" selection-start-line="223" selection-start-column="28" selection-end-line="223" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#5883#5884#0" expanded="true" />
+            <element signature="e#5937#5938#0" expanded="true" />
           </folding>
         </state>
       </provider>

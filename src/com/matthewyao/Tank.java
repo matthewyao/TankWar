@@ -224,7 +224,9 @@ public class Tank {
     public void superFire(){
         Direction[] dirs = Direction.values();
         for (Direction dir : dirs) {
-            fire(dir);
+            if (dir != Direction.STOP){
+                fire(dir);
+            }
         }
     }
 }
