@@ -12,6 +12,16 @@ public class Tank {
 
     private int oldX,oldY;
 
+    private int life = 100;
+
+    public int getLife() {
+        return life;
+    }
+
+    public void setLife(int life) {
+        this.life = life;
+    }
+
     public int getX() {
         return x;
     }

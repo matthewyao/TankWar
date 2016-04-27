@@ -78,7 +78,13 @@ public class Missile {
 
     public void hitTank(Tank tank){
         if(live && this.getRect().intersects(tank.getRect()) && tank.isLive() && this.good != tank.isGood()){
-            tank.setLive(false);//坦克消失
+            if (tank.isGood()){
+                tank.setLife(tank.getLife() - 20);
+                if (tank.getLife() <= 0) tank.setLive(false);
+            }
+            else {
+                tank.setLive(false);//坦克消失
+            }
             setLive(false);//子弹消失
             tankClient.explodes.add(new Explode(tank.getX(),tank.getY(),tankClient));//爆炸
         }
