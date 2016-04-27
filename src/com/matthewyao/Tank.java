@@ -189,4 +189,15 @@ public class Tank {
             this.stay();
         }
     }
+
+    public void collidesWithTanks(java.util.List<Tank> tanks){
+        for (Tank tank : tanks){
+            if (this != tank){
+                if (this.live && tank.isLive() && this.getRect().intersects(tank.getRect())){
+                    this.stay();
+                    tank.stay();
+                }
+            }
+        }
+    }
 }

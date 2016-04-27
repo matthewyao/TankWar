@@ -26,26 +26,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TankClient.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TankClient.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/matthewyao/TankClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="80" column="19" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.6508689">
+              <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#722#728#0" expanded="true" />
                 <element signature="class#1224:1374" expanded="false" />
-                <element signature="e#3372#3431#0" expanded="false" />
+                <element signature="e#3415#3474#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tank.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Tank.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/matthewyao/Tank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3048973">
-              <caret line="172" column="60" selection-start-line="172" selection-start-column="60" selection-end-line="172" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="197" column="32" selection-start-line="197" selection-start-column="32" selection-end-line="197" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5355#5356#0" expanded="true" />
@@ -189,8 +189,8 @@
         <option value="$PROJECT_DIR$/src/com/matthewyao/Explode.java" />
         <option value="$PROJECT_DIR$/src/com/matthewyao/Wall.java" />
         <option value="$PROJECT_DIR$/src/com/matthewyao/Missile.java" />
-        <option value="$PROJECT_DIR$/src/com/matthewyao/TankClient.java" />
         <option value="$PROJECT_DIR$/src/com/matthewyao/Tank.java" />
+        <option value="$PROJECT_DIR$/src/com/matthewyao/TankClient.java" />
       </list>
     </option>
   </component>
@@ -582,12 +582,12 @@
       <workItem from="1460467332074" duration="2861000" />
       <workItem from="1460789025082" duration="7041000" />
       <workItem from="1460898957521" duration="3145000" />
-      <workItem from="1461764276291" duration="1266000" />
+      <workItem from="1461764276291" duration="1974000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26476000" />
+    <option name="totallyTimeSpent" value="27184000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
@@ -649,7 +649,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#722#728#0" expanded="true" />
             <element signature="class#1224:1374" expanded="false" />
-            <element signature="e#3372#3431#0" expanded="false" />
+            <element signature="e#3415#3474#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -762,7 +762,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#722#728#0" expanded="true" />
             <element signature="class#1224:1374" expanded="false" />
-            <element signature="e#3372#3431#0" expanded="false" />
+            <element signature="e#3415#3474#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -875,7 +875,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#722#728#0" expanded="true" />
             <element signature="class#1224:1374" expanded="false" />
-            <element signature="e#3372#3431#0" expanded="false" />
+            <element signature="e#3415#3474#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -987,7 +987,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#722#728#0" expanded="true" />
             <element signature="class#1224:1374" expanded="false" />
-            <element signature="e#3372#3431#0" expanded="false" />
+            <element signature="e#3415#3474#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1192,27 +1192,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/matthewyao/TankClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="80" column="19" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#722#728#0" expanded="true" />
-            <element signature="class#1224:1374" expanded="false" />
-            <element signature="e#3372#3431#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/matthewyao/Tank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3048973">
-          <caret line="172" column="60" selection-start-line="172" selection-start-column="60" selection-end-line="172" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="197" column="32" selection-start-line="197" selection-start-column="32" selection-end-line="197" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5355#5356#0" expanded="true" />
             <element signature="e#5409#5410#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/matthewyao/TankClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6508689">
+          <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#722#728#0" expanded="true" />
+            <element signature="class#1224:1374" expanded="false" />
+            <element signature="e#3415#3474#0" expanded="false" />
           </folding>
         </state>
       </provider>
