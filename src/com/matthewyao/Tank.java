@@ -14,6 +14,8 @@ public class Tank {
 
     private int life = 100;
 
+    private BloodBar bloodBar = new BloodBar();
+
     public int getLife() {
         return life;
     }
@@ -102,6 +104,7 @@ public class Tank {
         g.fillOval(x, y, WIDTH, HEIGHT);
         g.setColor(Color.black);
         drawPt(g);
+        if (good) bloodBar.draw(g);
         g.setColor(c);
         move();
     }
@@ -227,6 +230,16 @@ public class Tank {
             if (dir != Direction.STOP){
                 fire(dir);
             }
+        }
+    }
+
+    private class BloodBar{
+        public void draw(Graphics g){
+            Color c = g.getColor();
+            g.setColor(Color.RED);
+            g.drawRect(x, y - 10, WIDTH, 5);
+            g.fillRect(x, y - 10, life * WIDTH / 100, 5);
+            g.setColor(c);
         }
     }
 }
